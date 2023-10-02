@@ -36,8 +36,11 @@ public class Meses {
      case 'a':
      System.out.println("abril");
      break;
+     case '1':
+     System.out.println("mayo");
+     break;
      default:
-       System.out.println("dia no valido.");
+       System.out.println("mes no valido.");
     }
     }
     
