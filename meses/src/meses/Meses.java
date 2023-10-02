@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package clash.royal1;
+package meses;
 
 import java.util.Scanner;
 
@@ -10,36 +10,35 @@ import java.util.Scanner;
  *
  * @author ahsh3509
  */
-public class ClashRoyal1 {
+public class Meses {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    int dia;
-    Scanner sc=new Scanner(System.in);
-    System.out.println("pon un numero del 1 al 7");
-    dia=sc.nextInt();
-    switch(dia)
+    Scanner lec = new Scanner(System.in);
+    char caracter;
+    System.out.println("teclea un carácter: ");
+    caracter=lec.next().charAt(0);
+    
+    switch(caracter)
     {
-     case 0:
-     System.out.println("1 es lunes.");
+     case 'e':
+     case 'E':
+     System.out.println("enero");
      break;
-     case 1:
-     System.out.println("marte.");
+     case 'f':
+     System.out.println("febrero");
      break;
-     case 2:
-     System.out.println("miercoles.");
+     case 'm':
+     System.out.println("marzo");
      break;
-     case 3:
-     System.out.println("jueves");
+     case 'a':
+     System.out.println("abril");
      break;
-     case 4:
-     System.out.println("viernes");
-     break; 
      default:
        System.out.println("dia no valido.");
     }
+    }
     
- }
 }
