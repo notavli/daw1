@@ -16,11 +16,32 @@ public class Horastrabajas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     int horas,tarifas;
-        System.out.println("cantas horas has trabajdo");
-        Scanner pantalla= new Scanner (System.in);
-        horas = pantalla.nextInt();
+    double horas,hora_normal,horas_extra,salario_extra,salario_normal,salario,t_normal;
+    Scanner sc=new Scanner(System.in);
+    System.out.print("igresa el numero de horas trabajados");
+    horas=sc.nextInt();
+     
+    hora_normal=35;
+    t_normal=20;
+     
+   if (horas>hora_normal)
+    {
+         horas_extra = horas - hora_normal;
+         salario_extra = horas_extra*t_normal* 1.5;
+         salario_normal= hora_normal * t_normal;
+         salario = salario_extra + salario_normal;
+         
+         System.out.print("tu salario  es"+salario);
+     }
+     else
+     {
+         salario= horas*t_normal;
+         System.out.print("tu salario  es"+salario);
+     }
+      
+     
      
     }
     
 }
+
