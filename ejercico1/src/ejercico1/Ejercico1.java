@@ -10,7 +10,8 @@ public class Ejercico1 {
         {
           System.out.println("Contador -->"+cont);  
         }
-        
+       
+            
     }
     
 }
